@@ -1,8 +1,10 @@
 DEPENDENCIES
   atom
-    path: site-cookbooks/atom_cookbook
+    git: git://github.com/ryersonlibrary/atom_cookbook.git
+    revision: 39e2c90cb5e1949f81eea1fda8fa067bff8d72db
   lits_vm
-    path: site-cookbooks/lits_vm
+    git: git://github.com/ryersonlibrary/lits_vm.git
+    revision: 32dd05f30b629019597beb5ab72843473db33866
 
 GRAPH
   7-zip (1.0.2)
