@@ -1,0 +1,31 @@
+{
+  "name": "atom",
+  "description": "Sets up an Access to Memory instance",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "lits_vm": {
+      "install_mysql": true,
+      "install_nginx": true,
+      "install_java": true,
+      "install_elasticsearch": true,
+      "install_nodejs": true,
+      "install_php": true,
+      "install_ffmpeg" : true,
+      "npm_modules": "less gulp",
+      "additional_packages": ["gearmand", "memcached", "ImageMagick", "ghostscript", "poppler-utils", "fop"]
+    },
+    "atom" : {
+      "git_repo" : "git://github.com/ryersonlibrary/atom.git",
+      "git_revision" : "RULA/2.2.x",
+      "config" : {
+        "factories" : {
+          "user_timeout" : "3600"
+        }
+      }
+    }
+  },
+  "override_attributes": {
+  },
+  "chef_type": "role",
+  "run_list": [ "recipe[lits_vm]", "recipe[atom]" ]
+}
