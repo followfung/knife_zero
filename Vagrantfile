@@ -34,6 +34,7 @@ Vagrant.configure(2) do |config|
   config.omnibus.chef_version = '12.3.0' # version pin 12.3.0
 
   config.vm.provision :chef_solo do |chef|
+    chef.roles_path = 'roles'
     chef.json = {
       atom: {
         server_name: conf[:vm_hostname],
