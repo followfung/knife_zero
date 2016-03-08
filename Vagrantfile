@@ -22,7 +22,7 @@ Vagrant.configure(2) do |config|
 
   config.vm.provider 'virtualbox' do |vb|
     vb.name = conf[:vm_hostname]
-    vb.memory = conf[:vvagm_memory]
+    vb.memory = conf[:vm_memory]
     vb.cpus = conf[:vm_cpus]
 
     vb.customize ['modifyvm', :id, '--ioapic', 'on'] if conf[:vm_cpus] > 1
@@ -47,6 +47,6 @@ Vagrant.configure(2) do |config|
         }
       }
     }
-    chef.add_recipe 'atom'
+    chef.add_role 'atom'
   end
 end
