@@ -8,13 +8,6 @@
       "npm_modules": "less gulp",
       "additional_packages": ["gearmand", "memcached", "ImageMagick", "ghostscript", "poppler-utils", "fop"]
     },
-    "java": {
-      "install_flavor": "oracle",
-      "jdk_version": "8",
-      "oracle": {
-        "accept_oracle_download_terms": true
-      }
-    },
     "elasticsearch": {
       "version": "1.7.0",
       "allocated_memory": "512m"
