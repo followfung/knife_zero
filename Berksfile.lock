@@ -1,10 +1,10 @@
 DEPENDENCIES
   atom
     git: git://github.com/ryersonlibrary/atom_cookbook.git
-    revision: 39e2c90cb5e1949f81eea1fda8fa067bff8d72db
+    revision: f9cddf747c586972ddc0355cfc0961f3e4858913
   lits_vm
     git: git://github.com/ryersonlibrary/lits_vm.git
-    revision: 32dd05f30b629019597beb5ab72843473db33866
+    revision: 9670694d3dd27e616d26b6f78eade8ae480d6cf6
 
 GRAPH
   7-zip (1.0.2)

@@ -4,15 +4,13 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "lits_vm": {
-      "install_mysql": true,
-      "install_nginx": true,
-      "install_java": true,
-      "install_elasticsearch": true,
-      "install_nodejs": true,
-      "install_php": true,
-      "install_ffmpeg" : true,
+      "components": ["mysql", "nginx", "elasticsearch", "nodejs", "php", "ffmpeg"],
       "npm_modules": "less gulp",
       "additional_packages": ["gearmand", "memcached", "ImageMagick", "ghostscript", "poppler-utils", "fop"]
+    },
+    "elasticsearch": {
+      "version": "1.7.0",
+      "allocated_memory": "512m"
     },
     "atom" : {
       "git_repo" : "git://github.com/ryersonlibrary/atom.git",

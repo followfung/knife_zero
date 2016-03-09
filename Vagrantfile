@@ -39,12 +39,7 @@ Vagrant.configure(2) do |config|
       atom: {
         server_name: conf[:vm_hostname],
         git_repo: 'https://github.com/ryersonlibrary/atom.git',
-        git_revision: 'RULA/2.2.x',
-        config: {
-          factories: {
-            user_timeout: 1800
-          }
-        }
+        git_revision: 'RULA/2.2.x'
       }
     }
     chef.add_role 'atom'
