@@ -37,9 +37,7 @@ Vagrant.configure(2) do |config|
     chef.roles_path = 'roles'
     chef.json = {
       atom: {
-        server_name: conf[:vm_hostname],
-        git_repo: 'https://github.com/ryersonlibrary/atom.git',
-        git_revision: 'RULA/2.2.x'
+        server_name: conf[:vm_hostname]
       }
     }
     chef.add_role 'atom'
