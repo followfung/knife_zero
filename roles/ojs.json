@@ -5,7 +5,7 @@
   "default_attributes": {
     "lits_vm": {
       "components": ["mysql", "nginx", "php"]
-    },
+    }
   },
   "override_attributes": {
   },
