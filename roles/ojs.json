@@ -3,10 +3,7 @@
   "description": "Sets up an OJS instance",
   "json_class": "Chef::Role",
   "default_attributes": {
-    "lits_vm": {
-      "components": ["mysql", "nginx", "php"],
-      "permit_root_login": "yes"
-    }
+    "lits_vm": {}
   },
   "override_attributes": {
   },
