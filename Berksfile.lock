@@ -1,10 +1,10 @@
 DEPENDENCIES
   atom
     git: git://github.com/ryersonlibrary/atom_cookbook.git
-    revision: f9cddf747c586972ddc0355cfc0961f3e4858913
+    revision: c1875c58075a1ea57b6186110061a30cdd3dc85e
   lits_vm
     git: git://github.com/ryersonlibrary/lits_vm.git
-    revision: f9c6326671086970beb26a66bbf723fe30fe8eb1
+    revision: 5d526ca1dd48293c848cf712384b6feb30346c2a
 
 GRAPH
   7-zip (1.0.2)
@@ -43,10 +43,12 @@ GRAPH
     apt (>= 0.0.0)
   lits_vm (0.1.0)
     chef-sugar (~> 3.3.0)
+    database (~> 4.0.9)
     elasticsearch (~> 0.3.13)
     firewall (~> 2.4.0)
     java (~> 1.39.0)
     mysql (~> 6.1.2)
+    mysql2_chef_gem (~> 1.0.2)
     nginx (~> 2.7.6)
     nodejs (~> 2.4.4)
     php (~> 1.8.0)
