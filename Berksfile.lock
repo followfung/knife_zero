@@ -1,10 +1,10 @@
 DEPENDENCIES
   atom
     git: git://github.com/ryersonlibrary/atom_cookbook.git
-    revision: 894424e5b305b9078e26a083c32911c163145c17
+    revision: efd39d2f73af231c85ab5daf5c785d21ed82e614
   lits_vm
     git: git://github.com/ryersonlibrary/lits_vm.git
-    revision: d88be37ad044e828e36e327a264f9b95b38daad9
+    revision: 6976ebd129429c81ceb3dc9e94a215adf1cd4557
 
 GRAPH
   7-zip (1.0.2)
@@ -14,14 +14,10 @@ GRAPH
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  atom (0.1.0)
-    database (~> 4.0.9)
-    mysql (~> 6.1.2)
-    mysql2_chef_gem (~> 1.0.2)
+  atom (0.2.0)
+    elasticsearch (~> 0.3.13)
+    java (~> 1.39.0)
     nginx (~> 2.7.6)
-    nodejs (~> 2.4.4)
-    php (~> 1.8.0)
-    yum-epel (~> 0.6.5)
   bluepill (2.4.3)
     rsyslog (>= 2.0)
   build-essential (2.4.0)
@@ -37,8 +33,6 @@ GRAPH
     chef-sugar (>= 0.0.0)
   homebrew (2.1.0)
     build-essential (>= 2.1.2)
-  iis (4.1.7)
-    windows (>= 1.34.6)
   java (1.39.0)
     apt (>= 0.0.0)
   lits_vm (0.1.0)
@@ -51,7 +45,6 @@ GRAPH
     mysql2_chef_gem (~> 1.0.2)
     nginx (~> 2.7.6)
     nodejs (~> 2.4.4)
-    php (~> 1.8.0)
     sshd (~> 1.1.3)
     sudo (~> 2.9.0)
     tar (~> 0.7.0)
@@ -85,13 +78,6 @@ GRAPH
   openssl (4.4.0)
     chef-sugar (>= 3.1.1)
   packagecloud (0.2.0)
-  php (1.8.0)
-    build-essential (>= 0.0.0)
-    iis (>= 0.0.0)
-    mysql (>= 6.0.0)
-    windows (>= 0.0.0)
-    xml (>= 0.0.0)
-    yum-epel (>= 0.0.0)
   postgresql (4.0.6)
     apt (>= 1.9.0)
     build-essential (>= 0.0.0)
@@ -111,9 +97,6 @@ GRAPH
   users (2.0.3)
   windows (1.39.2)
     chef_handler (>= 0.0.0)
-  xml (2.0.0)
-    build-essential (>= 0.0.0)
-    chef-sugar (>= 0.0.0)
   yum (3.10.0)
   yum-epel (0.6.6)
     yum (~> 3.10.0)
