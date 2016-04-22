@@ -4,11 +4,11 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "lits_vm": {
-      "components" : [ "mysql" ]
+      "components" : [ "php", "mysql", "nginx" ]
     }
   },
   "override_attributes": {
   },
   "chef_type": "role",
-  "run_list": [ "recipe[lits_vm]" ]
+  "run_list": [ "recipe[lits_vm]", "recipe[ojs]" ]
 }
