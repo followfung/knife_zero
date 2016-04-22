@@ -4,7 +4,10 @@ DEPENDENCIES
     revision: e1f33c6bb5451afcd44ba98e46275468f4eeacd5
   lits_vm
     git: git://github.com/ryersonlibrary/lits_vm.git
-    revision: 2fffc745fa42bb9650702575084f4cb24f3e3904
+    revision: e08b01cfeb5431652aabca048590d367a34000ac
+  ojs
+    git: git://github.com/ryersonlibrary/ojs_cookbook.git
+    revision: d9f9b9a7b94190d883f5a01280c412c5e486f14d
 
 GRAPH
   7-zip (1.0.2)
@@ -78,6 +81,7 @@ GRAPH
     homebrew (>= 0.0.0)
     yum-epel (>= 0.0.0)
   ohai (2.1.0)
+  ojs (0.1.0)
   openssl (4.4.0)
     chef-sugar (>= 3.1.1)
   packagecloud (0.2.0)
