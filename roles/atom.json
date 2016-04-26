@@ -6,6 +6,7 @@
     "lits_vm": {
       "components": ["mysql", "nginx", "elasticsearch", "nodejs", "php", "ffmpeg"],
       "npm_modules": "less gulp",
+      "php_extension_packages": [ "php-pdo", "php-mysql", "php-xml", "php-mbstring", "php-apc", "php-gearman", "php-ldap" ],
       "additional_packages": ["gearmand", "memcached", "ImageMagick", "ghostscript", "poppler-utils", "fop"]
     },
     "elasticsearch": {
