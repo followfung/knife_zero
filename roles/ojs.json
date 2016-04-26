@@ -4,7 +4,8 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "lits_vm": {
-      "components" : [ "php", "mysql", "nginx" ]
+      "components" : [ "php", "mysql", "nginx" ],
+      "php_extension_packages": [ "php-pdo", "php-mysql", "php-xml", "php-mbstring" ],
     }
   },
   "override_attributes": {
