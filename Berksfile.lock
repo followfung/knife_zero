@@ -4,7 +4,7 @@ DEPENDENCIES
     revision: e1f33c6bb5451afcd44ba98e46275468f4eeacd5
   lits_vm
     git: git://github.com/ryersonlibrary/lits_vm.git
-    revision: e08b01cfeb5431652aabca048590d367a34000ac
+    revision: 172548f72a9c57cf9aaf340ccdafd3ccbdb5e11d
   ojs
     git: git://github.com/ryersonlibrary/ojs_cookbook.git
     revision: d9f9b9a7b94190d883f5a01280c412c5e486f14d
@@ -109,7 +109,7 @@ GRAPH
   sudo (2.9.0)
   tar (0.7.0)
   users (2.0.3)
-  windows (1.39.2)
+  windows (1.40.0)
     chef_handler (>= 0.0.0)
   xml (2.0.0)
     build-essential (>= 0.0.0)
