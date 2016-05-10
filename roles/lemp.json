@@ -1,0 +1,22 @@
+{
+  "name": "lemp",
+  "description": "VM base configuration",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "lits_vm" : {
+      "firewall" : {
+        "allow_ports" : {
+          "http" : 80,
+          "https" : 443
+        }
+      }
+    }
+  },
+  "override_attributes": {
+  },
+  "run_list": [
+    "role[base]",
+    "recipe[lits_vm::nginx]"
+  ]
+}
