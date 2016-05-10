@@ -1,0 +1,29 @@
+{
+  "name": "base",
+  "description": "VM base configuration",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "sshd": {
+      "sshd_config" : {
+        "PasswordAuthentication" : "no",
+        "UsePAM": "no",
+        "ChallengeResponseAuthentication": "no",
+        "PermitRootLogin": "no",
+        "LoginGraceTime": "1m",
+        "X11Forwarding": "no",
+        "GatewayPorts": "no",
+        "PrintMotd": "no",
+        "PrintLastLog": "yes",
+        "TCPKeepAlive": "yes",
+        "Ciphers": "aes128-ctr,aes192-ctr,aes256-ctr,arcfour256,arcfour128",
+        "MACs": "hmac-sha1,umac-64@openssh.com,hmac-ripemd160"
+      }
+    }
+  },
+  "override_attributes": {
+  },
+  "run_list": [
+    "recipe[lits_vm]"
+  ]
+}
