@@ -1,10 +1,16 @@
 local_mode true
 chef_repo_path File.expand_path('../', __FILE__)
-cookbook_path [File.expand_path('../berks-cookbooks', __FILE__)]
+cookbook_path [
+  File.expand_path('../cookbooks', __FILE__),
+  File.expand_path('../berks-cookbooks', __FILE__)
+]
 
 knife[:ssh_attribute] = 'knife_zero.host'
 knife[:use_sudo] = true
 knife[:host_key_verify] = false
+
+knife[:before_bootstrap] = 'berks vendor'
+knife[:before_converge]  = 'berks vendor'
 
 ## use specific key file to connect server instead of ssh_agent(use ssh_agent is set true by default).
 # knife[:identity_file] = "~/.ssh/id_rsa"
@@ -27,9 +33,3 @@ knife[:automatic_attribute_whitelist] = %w(
   cloud_v2
   chef_packages
 )
-
-## knife.rb will be read twice at run. (before launch chef-zero locally and before run knife.)
-## And configuration for chef-zero doesn't has key `color`.
-if ARGV[0..1] == %w('zero', 'converge') && !Chef::Config.key?(:color)
-  system('berks vendor')
-end
