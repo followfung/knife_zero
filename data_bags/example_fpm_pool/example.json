@@ -1,0 +1,9 @@
+{
+  "id" : "example",
+  "listen": "/var/run/php-fpm.example.sock",
+  "process_manager": "ondemand",
+  "max_children": 10,
+  "additional_config": {
+    "pm.max_requests": 200,
+  }  
+}

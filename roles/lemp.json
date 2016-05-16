@@ -1,0 +1,25 @@
+{
+  "name": "lemp",
+  "description": "LEMP configuration (Linux Enginx Mysql PHP)",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes": {
+    "lits_vm" : {
+      "firewall" : {
+        "allow_ports" : {
+          "http" : 80,
+          "https" : 443
+        },
+      "php_extension_packages": [ "php-pdo", "php-mysql", "php-xml", "php-mbstring", "php-apc", "php-gearman", "php-ldap" ]
+      }
+    }
+  },
+  "override_attributes": {
+  },
+  "run_list": [
+    "role[base]",
+    "recipe[lits_vm::nginx]",
+    "recipe[lits_vm::mysql]",
+    "recipe[lits_vm::php]"
+  ]
+}

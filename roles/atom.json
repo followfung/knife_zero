@@ -4,9 +4,7 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "lits_vm": {
-      "components": ["mysql", "nginx", "elasticsearch", "nodejs", "php", "ffmpeg"],
       "npm_modules": "less gulp",
-      "php_extension_packages": [ "php-pdo", "php-mysql", "php-xml", "php-mbstring", "php-apc", "php-gearman", "php-ldap" ],
       "additional_packages": ["gearmand", "memcached", "ImageMagick", "ghostscript", "poppler-utils", "fop"]
     },
     "elasticsearch": {
@@ -26,5 +24,11 @@
   "override_attributes": {
   },
   "chef_type": "role",
-  "run_list": [ "recipe[lits_vm]", "recipe[atom]" ]
+  "run_list": [
+    "role[lemp]",
+    "recipe[lits_vm::elasticsearch]",
+    "recipe[lits_vm::nodejs]",
+    "recipe[lits_vm::ffmpeg]",
+    "recipe[atom]"
+  ]
 }
