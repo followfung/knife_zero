@@ -1,0 +1,4 @@
+[^.]*
+/example_fpm_pool
+/example_mysql
+/example_nginx
