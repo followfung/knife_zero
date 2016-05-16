@@ -1,6 +1,6 @@
 {
   "name": "lemp",
-  "description": "VM base configuration",
+  "description": "LEMP configuration (Linux Enginx Mysql PHP)",
   "chef_type": "role",
   "json_class": "Chef::Role",
   "default_attributes": {
