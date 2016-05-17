@@ -1,7 +1,0 @@
-{
-  "id" : "example",
-  "fpm_pool" : "example",
-  "server_name" : "example.io",
-  "server_config" : [],
-  "location_blocks" : []
-}
