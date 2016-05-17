@@ -2,6 +2,7 @@ DEPENDENCIES
   atom
     git: git://github.com/ryersonlibrary/atom_cookbook.git
     revision: e1f33c6bb5451afcd44ba98e46275468f4eeacd5
+    tag: v0.2.0
   lits_vm
     git: git://github.com/ryersonlibrary/lits_vm.git
     revision: a83c7ab00ef942bcd6a5894d9106a14b637a4ef4
