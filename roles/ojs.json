@@ -3,13 +3,9 @@
   "description": "Sets up an OJS instance",
   "json_class": "Chef::Role",
   "default_attributes": {
-    "lits_vm": {
-      "components" : [ "nginx", "php", "mysql" ],
-      "php_extension_packages": [ "php-pdo", "php-mysql", "php-xml", "php-mbstring" ]
-    }
   },
   "override_attributes": {
   },
   "chef_type": "role",
-  "run_list": [ "recipe[lits_vm]", "recipe[ojs]" ]
+  "run_list": [ "role[lemp]", "recipe[ojs]" ]
 }
