@@ -4,7 +4,10 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "lits_vm": {
-      "npm_modules": "less gulp",
+      "npm_modules": [
+        { "name" : "less", "version" : "latest" },
+        { "name" : "gulp", "version" : "latest" }
+      ],
       "additional_packages": ["gearmand", "memcached", "ImageMagick", "ghostscript", "poppler-utils", "fop"]
     },
     "elasticsearch": {

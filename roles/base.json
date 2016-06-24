@@ -7,7 +7,6 @@
     "sshd": {
       "sshd_config" : {
         "PasswordAuthentication" : "no",
-        "UsePAM": "no",
         "ChallengeResponseAuthentication": "no",
         "PermitRootLogin": "no",
         "LoginGraceTime": "1m",

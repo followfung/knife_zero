@@ -9,9 +9,9 @@
         "allow_ports" : {
           "http" : 80,
           "https" : 443
-        },
+        }
+      },
       "php_extension_packages": [ "php-pdo", "php-mysql", "php-xml", "php-mbstring", "php-apc", "php-gearman", "php-ldap" ]
-      }
     }
   },
   "override_attributes": {
