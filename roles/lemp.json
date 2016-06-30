@@ -17,7 +17,6 @@
   "override_attributes": {
   },
   "run_list": [
-    "role[base]",
     "recipe[lits_vm::nginx]",
     "recipe[lits_vm::mysql]",
     "recipe[lits_vm::php]"
