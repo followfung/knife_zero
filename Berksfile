@@ -1,7 +1,7 @@
 source 'https://supermarket.chef.io/'
 
 cookbook 'atom', github: 'ryersonlibrary/atom_cookbook', tag: 'v0.2.0'
-cookbook 'lits_vm', github: 'ryersonlibrary/lits_vm', tag: 'v0.2.3'
+cookbook 'lits_vm', github: 'ryersonlibrary/lits_vm', tag: 'v0.2.4'
 cookbook 'ojs', github: 'ryersonlibrary/ojs_cookbook'
 
 # Uncomment these lines to develop on the cookbooks!
