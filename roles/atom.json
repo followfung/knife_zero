@@ -4,11 +4,13 @@
   "json_class": "Chef::Role",
   "default_attributes": {
     "lits_vm": {
-      "npm_modules": [
-        { "name" : "less", "version" : "latest" },
-        { "name" : "gulp", "version" : "latest" }
-      ],
       "additional_packages": ["gearmand", "memcached", "ImageMagick", "ghostscript", "poppler-utils", "fop"]
+    },
+    "nodejs" : {
+      "npm_packages" : [
+        { "name" : "less" },
+        { "name" : "gulp" }
+      ]
     },
     "elasticsearch": {
       "version": "1.7.0",
