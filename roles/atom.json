@@ -32,7 +32,6 @@
   "run_list": [
     "role[lemp]",
     "recipe[lits_vm::elasticsearch]",
-    "recipe[lits_vm::nodejs]",
     "recipe[lits_vm::ffmpeg]",
     "recipe[atom]"
   ]
