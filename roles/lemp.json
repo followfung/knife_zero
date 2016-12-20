@@ -1,6 +1,6 @@
 {
   "name": "lemp",
-  "description": "LEMP configuration (Linux Enginx Mysql PHP)",
+  "description": "LEMP configuration",
   "chef_type": "role",
   "json_class": "Chef::Role",
   "default_attributes": {
@@ -10,8 +10,26 @@
           "http" : 80,
           "https" : 443
         }
-      },
-      "php_extension_packages": [ "php-pdo", "php-mysql", "php-xml", "php-mbstring", "php-apc", "php-gearman", "php-ldap" ]
+      }
+    },
+    "php" : {
+      "fpm_user" : "nginx",
+      "fpm_group" : "nginx",
+      "fpm_listen_user" : "nginx",
+      "fpm_listen_group" : "nginx",
+      "packages" : [
+        "php",
+        "php-devel",
+        "php-pear",
+        "php",
+        "php-pdo", 
+        "php-mysql", 
+        "php-xml", 
+        "php-mbstring", 
+        "php-apc", 
+        "php-gearman", 
+        "php-ldap"
+      ]
     }
   },
   "override_attributes": {
