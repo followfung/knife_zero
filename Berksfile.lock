@@ -1,17 +1,17 @@
 DEPENDENCIES
   atom
-    git: https://github.com/followfung/atom_cookbook.git
-    revision: 39b7aa1fa8c027031ba17bc36adcc8236cd896e9
-    branch: upgrade_cookbooks
+    git: https://github.com/ryersonlibrary/atom_cookbook.git
+    revision: f25c3e35a1f5f73e9f5d08ad30acb600e9266cb7
+    tag: v0.3.0
   lits_vm
-    git: https://github.com/followfung/lits_vm.git
-    revision: 05a07d10b4de8abbb9e80349cddd87fcb1a38c94
-    branch: upgrade_cookbooks
+    git: https://github.com/ryersonlibrary/lits_vm.git
+    revision: f20c0f2f3bc705b94a29130304390bdcc7326310
+    tag: v0.3.2
 
 GRAPH
   apt (5.0.0)
     compat_resource (>= 12.14.7)
-  ark (2.2.0)
+  ark (2.2.1)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
@@ -35,15 +35,14 @@ GRAPH
     ark (>= 0.2.4)
   firewall (2.5.3)
     chef-sugar (>= 0.0.0)
-  homebrew (2.1.2)
-    build-essential (>= 2.1.2)
+  homebrew (3.0.0)
   iis (5.0.5)
     windows (>= 1.34.6)
   java (1.42.0)
     apt (>= 0.0.0)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
-  lits_vm (0.3.0)
+  lits_vm (0.3.2)
     apt (>= 0.0.0)
     chef-sugar (~> 3.4.0)
     chef_nginx (~> 4.0.2)
@@ -60,6 +59,7 @@ GRAPH
     tar (~> 0.7.0)
     users (~> 4.0.3)
     yum-epel (>= 0.0.0)
+    yum-webtatic (>= 0.0.0)
   mariadb (0.3.3)
     apt (>= 0.0.0)
     yum (>= 0.0.0)
@@ -110,9 +110,12 @@ GRAPH
     ohai (>= 4.0.0)
   xml (3.1.0)
     build-essential (>= 0.0.0)
-  yum (4.1.0)
+  yum (3.13.0)
   yum-epel (2.0.0)
     compat_resource (>= 12.14.6)
   yum-mysql-community (2.0.2)
     compat_resource (>= 12.14.7)
+  yum-webtatic (0.7.0)
+    yum (~> 3.0)
+    yum-epel (>= 0.0.0)
   zypper (0.3.0)
