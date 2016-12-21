@@ -35,6 +35,7 @@
   "override_attributes": {
   },
   "run_list": [
+    "recipe[lits_vm]",
     "recipe[lits_vm::nginx]",
     "recipe[lits_vm::mysql]",
     "recipe[lits_vm::php]"
