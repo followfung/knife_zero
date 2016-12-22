@@ -1,5 +1,10 @@
 # knife_zero
-knife-zero chef repository. Use this to deploy our VMs, develop cookbooks, and test applications on Vagrant.
+Use this to configure and deploy our VMs and develop cookbooks.
+
+## Platform
+This configuration has been tested (and works) on Windows 7 and Windows 10. It *should* work on other platforms provided your environment is set up the same:
+- ChefDK 1.0.3
+- knife-zero 1.17.1
 
 ## Quickstart
 1. Install [ChefDK](https://downloads.chef.io/chef-dk/)
@@ -7,33 +12,24 @@ knife-zero chef repository. Use this to deploy our VMs, develop cookbooks, and t
 3. `chef gem install knife-zero`
 4. Ready to go!
 
-## Platform
-This configuration has been tested (and works) on Windows 7 and Windows 10. It *should* work on other platforms provided your environment is set up the same:
-- ChefDK `v0.11.2`
-- knife-zero `v1.15.2`
-- Vagrant `v1.8.1`
-- vagrant-berkshelf `v4.1.0`
-- vagrant-omnibus `v1.4.1`
+## Usage
+We use the `knife-zero` gem to deploy and configure remote nodes. More documentation is available [here](https://knife-zero.github.io/).
 
-## Deploying to a remote server
-1. `knife zero bootstrap SERVER_IP [-x USER] [--sudo]`
-2. Update the generated node.json file with attributes/roles
-3. `knife zero converge 'name:NODENAME' [-x USER] [-- sudo]`
+### Deploying to a remote server
+1. Set up data bags and/or roles of the node
+2. `knife zero bootstrap root@SERVER_IP -N NODENAME -r "RUN_LIST"`
 
-More documentation about knife-zero [here](https://knife-zero.github.io/)
+### Updating the configuration of an already provisioned server
+1. Update the data bags and/or roles of the node
+2. `knife zero converge 'name:NODENAME'`
 
-## Vagrant test environment 
-1. Install [Vagrant](https://www.vagrantup.com/)
-2. Install vagrant-berkshelf plugin `vagrant plugin install vagrant-berkshelf`
-3. Install vagrant-omnibus plugin `vagrant plugin install vagrant-omnibus`
-4. Configure Vagrantfile with desired attributes/roles
-5. `vagrant up`
-
-More documentation about Vagrant [here](https://www.vagrantup.com/docs/)
-
-## Developing cookbooks
-1. Update the Berksfile to reference a cookbook in the site-cookbooks folder. e.g.: `cookbook 'lits_vm', path: 'site-cookbooks/lits_vm'`
-2. Delete Berksfile.lock file
-3. Deploy configuration to remote server or use Vagrant
+## Developing
+Example: If you wanted to develop on the lits_vm cookbook
+1. `mkdir site-cookbooks && cd site-cookbooks`
+2. `git clone https://github.com/ryersonlibrary/lits_vm.git`
+3. Add this line to the Berksfile `cookbook 'lits_vm', path: 'site-cookbooks/lits_vm'`
+4. Remove or comment the existing line `cookbook 'lits_vm', github: 'ryersonlibrary/lits_vm', tag: 'v0.3.4'`
+5. Delete Berksfile.lock file
+6. `berks`
 
 More documentation about Chef [here](https://docs.chef.io/)
