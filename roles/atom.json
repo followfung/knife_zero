@@ -1,10 +1,18 @@
 {
-  "name": "atom",
-  "description": "Sets up an Access to Memory instance",
-  "json_class": "Chef::Role",
-  "default_attributes": {
-    "lits_vm": {
-      "additional_packages": ["gearmand", "memcached", "ImageMagick", "ghostscript", "poppler-utils", "fop"]
+  "name" : "atom",
+  "chef_type" : "role",
+  "description" : "Sets up AtoM v2.2.x from RULA repsitories",
+  "json_class" : "Chef::Role",
+  "default_attributes" : {
+    "lits_vm" : {
+      "packages" : [
+        "gearmand",
+        "memcached",
+        "ImageMagick",
+        "ghostscript",
+        "poppler-utils",
+        "fop"
+      ]
     },
     "nodejs" : {
       "npm_packages" : [
@@ -12,9 +20,9 @@
         { "name" : "gulp" }
       ]
     },
-    "elasticsearch": {
-      "version": "1.7.0",
-      "allocated_memory": "512m"
+    "elasticsearch" : {
+      "version" : "1.7.0",
+      "allocated_memory" : "512m"
     },
     "atom" : {
       "git_repo" : "git://github.com/ryersonlibrary/atom.git",
@@ -26,10 +34,7 @@
       }
     }
   },
-  "override_attributes": {
-  },
-  "chef_type": "role",
-  "run_list": [
+  "run_list" : [
     "role[lemp]",
     "recipe[lits_vm::elasticsearch]",
     "recipe[lits_vm::ffmpeg]",

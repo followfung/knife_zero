@@ -1,16 +1,16 @@
 {
-  "name": "atom_2_3",
-  "chef_type": "role",
-  "description": "Sets up an Access to Memory (v2.3) instance",
-  "json_class": "Chef::Role",
-  "default_attributes": {
-    "lits_vm": {
-      "packages": [
-        "gearmand", 
-        "memcached", 
-        "ImageMagick", 
-        "ghostscript", 
-        "poppler-utils", 
+  "name" : "atom_2_3",
+  "chef_type" : "role",
+  "description" : "Sets up AtoM v2.3.x",
+  "json_class" : "Chef::Role",
+  "default_attributes" : {
+    "lits_vm" : {
+      "packages" : [
+        "gearmand",
+        "memcached",
+        "ImageMagick",
+        "ghostscript",
+        "poppler-utils",
         "fop"
       ]
     },
@@ -20,13 +20,11 @@
         { "name" : "gulp" }
       ]
     },
-    "elasticsearch": {
-      "version": "1.7.0",
-      "allocated_memory": "512m"
+    "elasticsearch" : {
+      "version" : "1.7.0",
+      "allocated_memory" : "512m"
     },
     "atom" : {
-      "git_repo" : "git://github.com/artefactual/atom.git",
-      "git_revision" : "stable/2.3.x",
       "config" : {
         "factories" : {
           "user_timeout" : "3600"
@@ -34,8 +32,8 @@
       }
     }
   },
-  "override_attributes": {
-    "php": {
+  "override_attributes" : {
+    "php" : {
       "packages" : [
         "php56w-pecl-gearman",
         "php56w-pecl-imagick",
@@ -43,7 +41,7 @@
       ]
     }
   },
-  "run_list": [
+  "run_list" : [
     "role[lemp]",
     "role[webtatic56]",
     "recipe[lits_vm::elasticsearch]",
