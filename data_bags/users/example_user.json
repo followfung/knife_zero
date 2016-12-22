@@ -1,0 +1,10 @@
+{
+  "id": "example_user",
+  "password": "$1$UbTW1vf/$flQOwREJKhZKUtM7k3It01",
+  "ssh_keys": [
+    "YOUR SSH KEY HERE"
+  ],
+  "groups": [ "sysadmin" ],
+  "shell": "\/bin\/bash",
+  "comment": "example_user"
+}
