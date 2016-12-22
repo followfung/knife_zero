@@ -1,12 +1,12 @@
 DEPENDENCIES
   atom
     git: https://github.com/ryersonlibrary/atom_cookbook.git
-    revision: f0231366f3542b6796176d491802029867b43da1
-    tag: v0.3.1
+    revision: 302edf1c00029193070fc49d2de3192d38138929
+    tag: v0.3.2
   lits_vm
     git: https://github.com/ryersonlibrary/lits_vm.git
-    revision: 7ad8a0a765256a50886b7dee816fab3d900c13e4
-    tag: v0.3.3
+    revision: c03fcef00884f808451a5abdd0bf824dc6abd823
+    tag: v0.3.4
 
 GRAPH
   apt (5.0.0)
@@ -15,7 +15,7 @@ GRAPH
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  atom (0.3.1)
+  atom (0.3.2)
     chef_nginx (~> 4.0.2)
     elasticsearch (~> 0.3.14)
     java (~> 1.42.0)
@@ -45,7 +45,7 @@ GRAPH
     apt (>= 0.0.0)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
-  lits_vm (0.3.3)
+  lits_vm (0.3.4)
     apt (>= 0.0.0)
     chef-sugar (~> 3.4.0)
     chef_nginx (~> 4.0.2)
@@ -116,8 +116,8 @@ GRAPH
   xml (3.1.0)
     build-essential (>= 0.0.0)
   yum (3.13.0)
-  yum-epel (2.0.0)
-    compat_resource (>= 12.14.6)
+  yum-epel (2.1.0)
+    compat_resource (>= 12.16.3)
   yum-mysql-community (2.0.2)
     compat_resource (>= 12.14.7)
   yum-webtatic (0.7.0)
