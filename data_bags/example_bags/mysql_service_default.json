@@ -1,0 +1,18 @@
+{
+  "bag_type" : "mysql_service",
+  "id" : "mysql_service_default",
+  "name" : "default",
+  "bind_address" : "127.0.0.1",
+  "version" : "5.5",
+  "initial_root_password" : "a super secure password",
+  "databases" : [
+    { "name" : "default" }
+  ],
+  "users" : [
+    { 
+      "username" : "mysql_user", 
+      "password" : "a super secure password",
+      "databases" : ["default"]
+    }
+  ]
+}

@@ -1,0 +1,16 @@
+{
+  "bag_type" : "nginx_site",
+  "id" : "nginx_site_blank",
+  "name" : "blank",
+  "blocks" : {
+    "server" : [
+      {
+        "config" : [
+          { "directive" : "listen", "value" : "80 default" },
+          { "directive" : "server_name", "value" : "_" },
+          { "directive" : "return", "value" : "444" }
+        ]
+      }
+    ]
+  } 
+}
