@@ -25,6 +25,7 @@ We use the `knife-zero` gem to deploy and configure remote nodes. More documenta
 
 ## Developing
 Example: If you wanted to develop on the lits_vm cookbook
+
 1. `mkdir site-cookbooks && cd site-cookbooks`
 2. `git clone https://github.com/ryersonlibrary/lits_vm.git`
 3. Add this line to the Berksfile `cookbook 'lits_vm', path: 'site-cookbooks/lits_vm'`
