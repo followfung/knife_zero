@@ -1,3 +1,6 @@
+/berks-cookbooks/*
+/clients/*
+/nodes/*
+/site-cookbooks/*
 /.vagrant
 /www
-/berks-cookbooks/*
