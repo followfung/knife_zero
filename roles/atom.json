@@ -34,8 +34,18 @@
       }
     }
   },
+  "override_attributes" : {
+    "php" : {
+      "packages" : [
+        "php56w-pecl-gearman",
+        "php56w-pecl-imagick",
+        "php56w-pecl-memcache"
+      ]
+    }
+  },
   "run_list" : [
     "role[lemp]",
+    "role[webtatic56]",
     "recipe[lits_vm::elasticsearch]",
     "recipe[lits_vm::ffmpeg]",
     "recipe[atom]"
