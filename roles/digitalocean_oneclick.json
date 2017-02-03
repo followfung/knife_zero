@@ -13,5 +13,8 @@
       }
     }
   },
-  "override_attributes": {}
+  "override_attributes": {},
+  "run_list": [
+    "recipe[lits_vm]"
+  ]
 }
