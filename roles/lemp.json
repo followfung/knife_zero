@@ -21,7 +21,6 @@
         "php",
         "php-devel",
         "php-pear",
-        "php",
         "php-pdo", 
         "php-mysql", 
         "php-xml", 
