@@ -1,7 +1,7 @@
 {
   "name" : "atom_2_3",
   "chef_type" : "role",
-  "description" : "Sets up AtoM v2.3.x",
+  "description" : "Sets up AtoM v2.3.x from RULA repsitories",
   "json_class" : "Chef::Role",
   "default_attributes" : {
     "lits_vm" : {
@@ -25,6 +25,8 @@
       "allocated_memory" : "512m"
     },
     "atom" : {
+      "git_repo" : "git://github.com/ryersonlibrary/atom.git",
+      "git_revision" : "RULA/2.3.x",
       "config" : {
         "factories" : {
           "user_timeout" : "3600"
