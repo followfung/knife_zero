@@ -5,7 +5,7 @@ DEPENDENCIES
     tag: v0.3.2
   lits_vm
     git: https://github.com/ryersonlibrary/lits_vm.git
-    revision: a85cd894971c73d4e02f874eee385bf44b085b8d
+    revision: b732f1d73555eff14f0685146262a3dd112a3643
     tag: v0.3.5
 
 GRAPH
