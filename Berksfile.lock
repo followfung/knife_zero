@@ -1,26 +1,25 @@
 DEPENDENCIES
   atom
     git: https://github.com/ryersonlibrary/atom_cookbook.git
-    revision: bc714e414bddb4d3d473a9d9883793228388afd0
-    tag: v0.4.0
+    revision: 0a6928f8e0adf3ba62dc87e5b829ad0b5907649f
+    tag: v0.4.1
   lits_vm
     git: https://github.com/ryersonlibrary/lits_vm.git
-    revision: b732f1d73555eff14f0685146262a3dd112a3643
-    tag: v0.3.5
+    revision: 75ab3ccdb2316d8b1693c0097c55c490104232e4
+    tag: v0.4.0
 
 GRAPH
-  apt (5.1.0)
-    compat_resource (>= 12.16.3)
+  acme (2.0.0)
+  apt (6.0.0)
   ark (2.2.1)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  atom (0.4.0)
+  atom (0.4.1)
     chef_nginx (~> 4.0.2)
     elasticsearch (~> 0.3.14)
     java (~> 1.42.0)
-  build-essential (7.0.3)
-    compat_resource (>= 12.16.3)
+  build-essential (8.0.0)
     mingw (>= 1.1)
     seven_zip (>= 0.0.0)
   chef-sugar (3.4.0)
@@ -36,7 +35,7 @@ GRAPH
     postgresql (>= 1.0.0)
   elasticsearch (0.3.14)
     ark (>= 0.2.4)
-  firewall (2.5.3)
+  firewall (2.5.4)
     chef-sugar (>= 0.0.0)
   homebrew (3.0.0)
   iis (5.0.5)
@@ -45,7 +44,8 @@ GRAPH
     apt (>= 0.0.0)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
-  lits_vm (0.3.5)
+  lits_vm (0.4.0)
+    acme (~> 2.0.0)
     apt (>= 0.0.0)
     chef-sugar (~> 3.4.0)
     chef_nginx (~> 4.0.2)
