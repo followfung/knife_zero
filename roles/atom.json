@@ -28,7 +28,10 @@
       "git_repo" : "git://github.com/ryersonlibrary/atom.git",
       "git_revision" : "RULA/2.3.x",
       "plugins" : [
-        "https://github.com/ryersonlibrary/rulaArchivesPlugin.git"
+        {
+          "name" : "rulaArchivesPlugin",
+          "git_repo" : "https://github.com/ryersonlibrary/rulaArchivesPlugin.git"
+        }
       ],
       "config" : {
         "factories" : {
