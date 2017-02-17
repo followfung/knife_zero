@@ -1,6 +1,6 @@
 {
-  "name": "development",
-  "description": "Development environment",
+  "name": "example_development",
+  "description": "Example development environment",
   "chef_type": "environment",
   "json_class": "Chef::Environment",
   "default_attributes": {
