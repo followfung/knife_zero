@@ -10,7 +10,7 @@
       }
     },
     "acme" : {
-      "contact" : "mailto:patrick.fung@ryerson.ca",
+      "contact" : "mailto:your@email_here.com",
       "endpoint" : "https://acme-staging.api.letsencrypt.org"
     }
   },
