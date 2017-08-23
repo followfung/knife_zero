@@ -50,10 +50,12 @@
     }
   },
   "run_list" : [
+    "recipe[lits_vm]",
     "role[lemp]",
     "role[webtatic56]",
+    "recipe[atom]",
+    "recipe[lits_vm::nginx_sites]",
     "recipe[lits_vm::elasticsearch]",
-    "recipe[lits_vm::ffmpeg]",
-    "recipe[atom]"
+    "recipe[lits_vm::ffmpeg]"
   ]
 }
