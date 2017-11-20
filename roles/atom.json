@@ -1,7 +1,7 @@
 {
   "name" : "atom",
   "chef_type" : "role",
-  "description" : "Sets up AtoM v2.3.x from RULA repsitories",
+  "description" : "Sets up AtoM v2.4.x from RULA repsitories",
   "json_class" : "Chef::Role",
   "default_attributes" : {
     "lits_vm" : {
@@ -26,7 +26,7 @@
     },
     "atom" : {
       "git_repo" : "git://github.com/ryersonlibrary/atom.git",
-      "git_revision" : "RULA/2.3.x",
+      "git_revision" : "RULA/2.4.x",
       "plugins" : [
         {
           "name" : "rulaArchivesPlugin",
