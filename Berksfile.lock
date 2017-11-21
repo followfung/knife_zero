@@ -1,8 +1,8 @@
 DEPENDENCIES
   atom
     git: https://github.com/ryersonlibrary/atom_cookbook.git
-    revision: 9b1d9e111b4d9e69057b9b59f6365845065506ad
-    tag: v0.5.0
+    revision: 0f2285c07dc4c6b7420cc8767d9dcf284adc284e
+    tag: v0.5.1
   lits_vm
     git: https://github.com/ryersonlibrary/lits_vm.git
     revision: 09d92b061ac1cb8e0cf22a949db1aaff3a205def
@@ -16,7 +16,7 @@ GRAPH
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
     windows (>= 0.0.0)
-  atom (0.5.0)
+  atom (0.5.1)
     chef_nginx (~> 4.0.2)
     elasticsearch (~> 2.5.0)
     java (~> 1.50.0)
