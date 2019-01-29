@@ -12,6 +12,14 @@ knife[:host_key_verify] = false
 knife[:before_bootstrap] = 'berks vendor'
 knife[:before_converge]  = 'berks vendor'
 
+# update cookbook dependencies automatically for development
+# knife[:before_bootstrap] = 'berks update && berks vendor'
+# knife[:before_converge]  = 'berks update && berks vendor'
+
+# CHEF-18 DEPRECATION REMEDIATION
+# https://docs.chef.io/deprecations_local_listen.html
+knife[:listen] = true
+
 ## use specific key file to connect server instead of ssh_agent(use ssh_agent is set true by default).
 # knife[:identity_file] = "~/.ssh/id_rsa"
 

@@ -8,11 +8,25 @@
       "packages" : [
         "gearmand",
         "memcached",
+        "libmemcached-devel",
         "ImageMagick",
+        "ImageMagick-devel",
         "ghostscript",
         "poppler-utils",
         "fop"
-      ]
+      ],
+      "services" : {
+        "gearmand" : true,
+        "memcached" : true
+      },
+      "php" : {
+        "pecls" : [
+          "memcached",
+          "imagick"
+        ],
+        "install_gearman_extension" : true,
+        "install_apcu_extension" : true
+      }
     },
     "nodejs" : {
       "npm_packages" : [
@@ -21,7 +35,7 @@
       ]
     },
     "elasticsearch" : {
-      "version" : "1.7.0",
+      "version" : "1.7.6",
       "allocated_memory" : "512m"
     },
     "atom" : {
@@ -42,20 +56,19 @@
   },
   "override_attributes" : {
     "php" : {
-      "packages" : [
-        "php56w-pecl-gearman",
-        "php56w-pecl-imagick",
-        "php56w-pecl-memcache"
+      "pear_channels" : [
+        "pecl.php.net"
       ]
     }
   },
   "run_list" : [
     "recipe[lits_vm]",
     "role[lemp]",
-    "role[webtatic56]",
+    "role[php7_2]",
     "recipe[atom]",
     "recipe[lits_vm::nginx_sites]",
     "recipe[lits_vm::elasticsearch]",
-    "recipe[lits_vm::ffmpeg]"
+    "recipe[lits_vm::ffmpeg]",
+    "recipe[lits_vm::enable_services]"
   ]
 }
