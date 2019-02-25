@@ -1,0 +1,27 @@
+{
+  "name": "php7_0",
+  "description": "Installs PHP 7.0 on CentOS/RHEL using Webtatic repositories",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "override_attributes" : {
+    "lits_vm" : {
+      "enable_webtatic" : true
+    },
+    "php": {
+      "fpm_package" : "php70w-fpm",
+      "packages" : [
+        "php70w",
+        "php70w-cli",
+        "php70w-common",
+        "php70w-devel",
+        "php70w-ldap",
+        "php70w-pear",
+        "php70w-opcache",
+        "php70w-pdo",
+        "php70w-mbstring",
+        "php70w-mysql",
+        "php70w-xml"
+      ]
+    }
+  }
+}

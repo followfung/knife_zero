@@ -1,8 +1,8 @@
 DEPENDENCIES
   atom
     git: https://github.com/ryersonlibrary/atom_cookbook.git
-    revision: 57f9ec4900ac27b5308699122587d4c6fc18af66
-    tag: v0.6.0
+    revision: 5e50108b87e47c1cbe8920551f2567fa0eca1b8a
+    tag: v0.6.1
   lits_vm
     git: https://github.com/ryersonlibrary/lits_vm.git
     revision: 59b27bf2e4f95af15b1e3ad663ce2c28c5451e27
@@ -15,7 +15,7 @@ GRAPH
   ark (4.0.0)
     build-essential (>= 0.0.0)
     seven_zip (>= 0.0.0)
-  atom (0.6.0)
+  atom (0.6.1)
     chef_nginx (~> 6.2.0)
     elasticsearch (~> 2.5.0)
     java (~> 3.1.2)
@@ -98,7 +98,7 @@ GRAPH
   sudo (5.4.4)
   tar (2.2.0)
   users (5.4.0)
-  windows (5.2.2)
+  windows (5.2.3)
   yum (3.13.0)
   yum-epel (3.3.0)
   yum-mysql-community (4.0.1)
