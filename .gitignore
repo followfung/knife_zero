@@ -2,3 +2,9 @@
 /clients/*
 /nodes/*
 /site-cookbooks/*
+/json-attribs/*
+/data_bags/*
+!/data_bags/example_bags/*
+!/data_bags/users/example_user.json
+/environments/*
+!/environments/example_*.json
