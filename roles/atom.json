@@ -5,6 +5,7 @@
   "json_class" : "Chef::Role",
   "default_attributes" : {
     "lits_vm" : {
+      "install_nodejs" : true,
       "packages" : [
         "gearmand",
         "memcached",
