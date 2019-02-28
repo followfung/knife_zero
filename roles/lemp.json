@@ -4,14 +4,6 @@
   "chef_type": "role",
   "json_class": "Chef::Role",
   "default_attributes": {
-    "lits_vm" : {
-      "firewall" : {
-        "allow_ports" : {
-          "http" : 80,
-          "https" : 443
-        }
-      }
-    },
     "php" : {
       "fpm_user" : "nginx",
       "fpm_group" : "nginx",
@@ -30,9 +22,8 @@
       ]
     }
   },
-  "override_attributes": {
-  },
   "run_list": [
+    "role[firewall_allow_https]",
     "recipe[lits_vm::nginx]",
     "recipe[lits_vm::mysql]",
     "recipe[lits_vm::php]"
