@@ -5,8 +5,8 @@ DEPENDENCIES
     tag: v0.6.1
   lits_vm
     git: https://github.com/ryersonlibrary/lits_vm.git
-    revision: 59b27bf2e4f95af15b1e3ad663ce2c28c5451e27
-    tag: v0.7.0
+    revision: c2ccb6cfba4da193a5d14cebdf3884c0cb4e9827
+    tag: v1.0.2
 
 GRAPH
   acme (4.0.0)
@@ -45,7 +45,7 @@ GRAPH
   java (3.1.2)
     homebrew (>= 0.0.0)
     windows (>= 0.0.0)
-  lits_vm (0.7.0)
+  lits_vm (1.0.2)
     acme (~> 4.0.0)
     apt (>= 0.0.0)
     chef-sugar (~> 5.0.0)
@@ -63,7 +63,6 @@ GRAPH
     sshd (~> 2.0.0)
     sudo (~> 5.4.4)
     tar (~> 2.2.0)
-    users (~> 5.4.0)
     yum-epel (>= 0.0.0)
     yum-mysql-community (~> 4.0.1)
     yum-webtatic (>= 0.0.0)
@@ -90,14 +89,13 @@ GRAPH
     yum-epel (>= 0.0.0)
   postgresql (7.1.3)
   selinux (2.1.1)
-  selinux_policy (2.3.2)
+  selinux_policy (2.3.4)
   seven_zip (3.1.0)
     windows (>= 0.0.0)
   ssh-hardening (2.7.0)
   sshd (2.0.0)
   sudo (5.4.4)
   tar (2.2.0)
-  users (5.4.0)
   windows (5.2.3)
   yum (3.13.0)
   yum-epel (3.3.0)
