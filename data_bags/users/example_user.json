@@ -4,7 +4,6 @@
   "ssh_keys": [
     "YOUR SSH KEY HERE"
   ],
-  "groups": [ "sysadmin" ],
   "shell": "\/bin\/bash",
   "comment": "example_user"
 }
