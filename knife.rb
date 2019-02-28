@@ -5,6 +5,8 @@ cookbook_path [
   File.expand_path('../berks-cookbooks', __FILE__)
 ]
 
+knife[:editor] = "vi"
+
 knife[:ssh_attribute] = 'knife_zero.host'
 knife[:use_sudo] = true
 knife[:host_key_verify] = false
