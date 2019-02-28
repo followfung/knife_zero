@@ -15,5 +15,13 @@
     }
   },
   "override_attributes": {
+    "ssh-hardening" : {
+      "ssh" : {
+        "server" : {
+          "allow_tcp_forwarding" : true,
+          "allow_root_with_key" : true
+        }
+      }
+    }
   }
 }

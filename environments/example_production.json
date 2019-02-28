@@ -7,5 +7,14 @@
     "acme" : {
       "contact" : "mailto:your@email_here.com"
     }
+  },
+  "override_attributes" : {
+    "ssh-hardening" : {
+      "ssh" : {
+        "server" : {
+          "allow_tcp_forwarding" : true
+        }
+      }
+    }
   }
 }
