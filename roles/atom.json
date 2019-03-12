@@ -66,10 +66,10 @@
     "recipe[lits_vm]",
     "role[lemp]",
     "role[php7_0]",
+    "recipe[lits_vm::enable_services]",
     "recipe[atom]",
     "recipe[lits_vm::nginx_sites]",
     "recipe[lits_vm::elasticsearch]",
-    "recipe[lits_vm::ffmpeg]",
-    "recipe[lits_vm::enable_services]"
+    "recipe[lits_vm::ffmpeg]"
   ]
 }

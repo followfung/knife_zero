@@ -1,6 +1,6 @@
 {
-  "name": "firewall_allow_https",
-  "description": "Allows ports 80 (HTTP) and 443 (HTTPS) in firewall",
+  "name": "firewall_allow_web_traffic",
+  "description": "Allows traffic to ports 80 (HTTP) and 443 (HTTPS)",
   "chef_type": "role",
   "json_class": "Chef::Role",
   "default_attributes": {
@@ -12,7 +12,5 @@
         }
       }
     }
-  },
-  "run_list": [
-  ]
+  }
 }

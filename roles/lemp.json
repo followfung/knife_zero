@@ -23,7 +23,7 @@
     }
   },
   "run_list": [
-    "role[firewall_allow_https]",
+    "role[firewall_allow_web_traffic]",
     "recipe[lits_vm::nginx]",
     "recipe[lits_vm::mysql]",
     "recipe[lits_vm::php]"
