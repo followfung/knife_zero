@@ -1,0 +1,42 @@
+{
+  "name": "rh_php70",
+  "description": "Installs PHP 7.0 on CentOS/RHEL using Software Collections for Linux",
+  "chef_type": "role",
+  "json_class": "Chef::Role",
+  "default_attributes" : {
+    "lits_vm" : {
+      "scls" : ["rh-php70"]
+    }
+  },
+  "override_attributes" : {
+    "lits_vm" : {
+      "php" : {
+        "php_binary" : "/opt/rh/rh-php70/root/bin/php",
+      }
+    },
+    "php": {
+      "pear" : "/opt/rh/rh-php70/root/bin/pear",
+      "conf_dir" : "/etc/opt/rh/rh-php70",
+      "ext_conf_dir" : "/etc/opt/rh/rh-php70/php.d",
+      "ext_dir" : "/opt/rh/rh-php70/root/usr/lib64/php/modules",
+      "packages" : [
+        "rh-php70",
+        "rh-php70-php-devel",
+        "rh-php70-php-json",
+        "rh-php70-php-ldap",
+        "rh-php70-php-mbstring",
+        "rh-php70-php-mysqlnd",
+        "rh-php70-php-opcache",
+        "rh-php70-php-pdo",
+        "rh-php70-php-xml"
+      ],
+      "fpm_package" : "rh-php70-php-fpm",
+      "fpm_pooldir" : "/etc/opt/rh/rh-php70/php-fpm.d",
+      "fpm_default_conf" : "/etc/opt/rh/rh-php70/php-fpm.d/www.conf",
+      "fpm_service" : "rh-php70-php-fpm"
+    }
+  },
+  "run_list": [
+    "recipe[lits_vm::php]"
+  ]
+}
